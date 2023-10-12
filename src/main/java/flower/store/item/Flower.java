@@ -29,4 +29,5 @@ public class Flower {
     public FlowerColor getColor(){
         return color;
     }
+    
 }
