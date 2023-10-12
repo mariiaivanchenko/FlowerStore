@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class FlowerBucket extends Item {
     private List<FlowerPack> flowerPacks = new ArrayList<>();
 
-    public void addFlowerPack (FlowerPack flp) {
+    public void addFlowerPack(FlowerPack flp) {
         flowerPacks.add(flp);
     }
     
