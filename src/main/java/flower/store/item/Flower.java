@@ -26,7 +26,7 @@ public class Flower {
         this.price = fl.price;
     }
 
-    public FlowerColor getColor(){
+    public FlowerColor getColor() {
         return color;
     }
     
