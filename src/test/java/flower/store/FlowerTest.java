@@ -3,6 +3,9 @@ package flower.store;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import flower.store.item.Flower;
+import flower.store.item.FlowerColor;
+
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
@@ -28,6 +31,7 @@ public class FlowerTest {
     public void testColor() {
         FlowerColor color = FlowerColor.RED;
         flower.setColor(color);
-        Assertions.assertEquals("#FF0000", flower.getColor());
+        System.out.println(flower.getColor());
+        Assertions.assertEquals("#FF0000", flower.getColor().toString());
     }
 }
