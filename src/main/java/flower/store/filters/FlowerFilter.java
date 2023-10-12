@@ -19,10 +19,10 @@ public class FlowerFilter implements SearchFilter {
     public boolean match(Item item) {
         if (item instanceof Flower) {
             Flower flower = (Flower) item;
-            if ((this.sepalLength == flower.getSepalLength()) 
-                && (this.price == flower.getPrice()) 
-                && (this.color == flower.getColor()) 
-                && (this.flowerType == flower.getFlowerType())) {
+            if (this.sepalLength == flower.getSepalLength()
+                && this.price == flower.getPrice()
+                && this.color.equals(flower.getColor())
+                && this.flowerType.equals(flower.getFlowerType())) {
                 return true;
             } else {
                 return false; } 
